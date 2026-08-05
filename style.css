@@ -1,1 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0b0e14;
+    color: #e2e8f0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #131924;
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #de9b35;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+.logo span {
+    color: #de9b35;
+}
+
+nav a {
+    color: #a0aec0;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #de9b35;
+}
+
+.hero {
+    background: linear-gradient(rgba(11, 14, 20, 0.8), rgba(11, 14, 20, 0.95)), url('https://unsplash.com') no-repeat center/cover;
+    padding: 100px 5px;
+    text-align: center;
+    border-bottom: 1px solid #1e293b;
+}
+
+.hero h1 {
+    font-size: 42px;
+    color: #fff;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #a0aec0;
+    margin-bottom: 30px;
+}
+
+.btn-primary {
+    background-color: #de9b35;
+    color: #0b0e14;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    text-transform: uppercase;
+    transition: background 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #ffb443;
+}
+
+.catalog {
+    padding: 60px 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.catalog h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background-color: #131924;
+    border: 1px solid #2d3748;
+    border-radius: 6px;
+    padding: 25px;
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.raridade-faca { border-bottom: 4px solid #e4ae39; }
+.raridade-vermelha { border-bottom: 4px solid #eb4b4b; }
+.raridade-rosa { border-bottom: 4px solid #d32ce6; }
+
+.skin-tag {
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #718096;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.condicao {
+    font-size: 14px;
+    color: #a0aec0;
+    margin-bottom: 15px;
+}
+
+.preco {
+    font-size: 22px;
+    font-weight: bold;
+    color: #de9b35;
+}
+
+.contact-section {
+    background-color: #0f141c;
+    padding: 60px 5%;
+    border-top: 1px solid #1e293b;
+}
+
+.contact-wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #131924;
+    padding: 40px;
+    border-radius: 8px;
+    border: 1px solid #2d3748;
+}
+
+.contact-wrapper h2 {
+    color: #fff;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.contact-wrapper p {
+    color: #a0aec0;
+    margin-bottom: 25px;
+    font-size: 14px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+form label {
+    display: flex;
+    flex-direction: column;
+    color: #cbd5e1;
+    font-size: 14px;
+    font-weight: 600;
+    gap: 8px;
+}
+
+form input[type="email"],
+form textarea {
+    background-color: #1a2232;
+    border: 1px solid #2d3748;
+    color: #fff;
+    padding: 12px;
+    border-radius: 4px;
+    font-size: 15px;
+    transition: border-color 0.3s;
+}
+
+form input[type="email"]:focus,
+form textarea:focus {
+    border-color: #de9b35;
+    outline: none;
+}
+
+form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+form button[type="submit"] {
+    background-color: #de9b35;
+    color: #0b0e14;
+    border: none;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form button[type="submit"]:hover {
+    background-color: #ffb443;
+}
+
+footer {
+    background-color: #07090d;
+    text-align: center;
+    padding: 30px;
+    font-size: 12px;
+    color: #4a5568;
+    border-top: 1px solid #131924;
+}
 

@@ -1,1 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>67 Skin Store - Compre e Venda Skins</title>
+</head>
+<body>
 
+    <header>
+        <div class="logo">67<span>SKINS</span></div>
+        <nav>
+            <a href="#catalogo">Catálogo</a>
+            <a href="#contato">Suporte</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>As Melhores Skins de CS2</h1>
+        <p>Atualize seu inventário instantaneamente com os melhores preços e segurança total.</p>
+        <a href="#catalogo" class="btn-primary">Ver Catálogo</a>
+    </section>
+
+    <section id="catalogo" class="catalog">
+        <h2>Skins em Destaque</h2>
+        <div class="grid">
+            <div class="card raridade-faca">
+                <div class="skin-tag">★ Faca</div>
+                <h3>M9 Bayonet | Lore</h3>
+                <p class="condicao">Pouco Usada (MW)</p>
+                <div class="preco">R$ 8.450,00</div>
+            </div>
+            <div class="card raridade-vermelha">
+                <div class="skin-tag">Secreta</div>
+                <h3>AK-47 | Head Shot</h3>
+                <p class="condicao">Nova de Fábrica (FN)</p>
+                <div class="preco">R$ 620,00</div>
+            </div>
+            <div class="card raridade-rosa">
+                <div class="skin-tag">Confidencial</div>
+                <h3>AWP | Asiimov</h3>
+                <p class="condicao">Testada em Campo (FT)</p>
+                <div class="preco">R$ 980,00</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="contact-section">
+        <div class="contact-wrapper">
+            <h2>Encomende sua Skin</h2>
+            <p>Não encontrou o que procurava? Deixe seu e-mail e a skin desejada que nós encontramos para você!</p>
+            
+            <form action="https://formspree.io" method="POST">
+                <label> 
+                    Seu email: 
+                    <input type="email" name="email" placeholder="exemplo@email.com" required> 
+                </label> 
+                <label> 
+                    Sua mensagem 
+                    <textarea name="message" placeholder="Diga qual skin, condição e float você procura..." required></textarea> 
+                </label> 
+                <button type="submit">Enviar Pedido</button> 
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 67 Skins Store. Todos os direitos (não) reservados. Não afiliado à Valve Corporation.</p>
+    </footer>
+
+</body>
+</html>
